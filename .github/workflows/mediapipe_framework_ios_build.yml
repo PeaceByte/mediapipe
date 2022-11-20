@@ -18,4 +18,9 @@ jobs:
         run:  chmod +x ./mediapipe/objc/mediapipe_framework_ios_build.sh
       - name: Run
         run:  ./mediapipe/objc/mediapipe_framework_ios_build.sh
+
+      - uses: actions/upload-artifact@v3
+        with:
+         name: libmediapipe_framework_ios
+         path: bazel-bin/mediapipe/objc/libmediapipe_framework_ios.a
         
