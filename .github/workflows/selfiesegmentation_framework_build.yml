@@ -14,10 +14,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Build
+        run: chmod +x ./mediapipe/examples/ios/framework/selfiesegmentation/build.sh
       - name: Run
-        run: |
-         chmod +x ./mediapipe/examples/ios/framework/selfiesegmentation/build.sh
-         ./mediapipe/examples/ios/framework/selfiesegmentation/build.sh
+        run: ./mediapipe/examples/ios/framework/selfiesegmentation/build.sh
 
       - uses: actions/upload-artifact@v3
         with:
