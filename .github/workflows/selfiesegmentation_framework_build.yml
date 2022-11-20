@@ -15,7 +15,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Run
-        run:  ./mediapipe/examples/ios/framework/selfiesegmentation/build.sh
+        run: 
+         chmod +r ./mediapipe/examples/ios/framework/selfiesegmentation/build.sh
+         ./mediapipe/examples/ios/framework/selfiesegmentation/build.sh
 
       - uses: actions/upload-artifact@v3
         with:
