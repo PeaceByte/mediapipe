@@ -8,4 +8,4 @@ brew install bazelisk
 pip3 install --user six
 pip3 install numpy
 #build
-bazel build -c opt --config=ios_arm64 mediapipe/examples/ios/framework:Selfiesegmentation
+bazel build -c opt --config=ios_arm64 mediapipe/examples/ios/framework:SelfieSegmentation
