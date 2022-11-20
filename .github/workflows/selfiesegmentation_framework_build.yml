@@ -22,5 +22,5 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
          name: libmediapipe_framework_ios
-         path: bazel-bin/mediapipe/examples/ios/framework/selfiesegmentation/SelfieSegmentation.zip
+         path: bazel-out/applebin_ios-ios_arm64-opt-ST-2967bd56a867/bin/mediapipe/examples/ios/framework/selfiesegmentation/SelfieSegmentation.zip
         
