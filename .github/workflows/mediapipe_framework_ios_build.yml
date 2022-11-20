@@ -15,6 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Build
-        run: ｜
-         source ./mediapipe/objc/mediapipe_framework_ios_build.sh
+        run:  chmod +x ./mediapipe/objc/mediapipe_framework_ios_build.sh
+      - name: Run
+        run:  ./mediapipe/objc/mediapipe_framework_ios_build.sh
         
